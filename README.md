@@ -88,6 +88,7 @@ cd src
 ```
 
 Create a new file called move_robot.cpp and coordinates_pub.cpp. (Don't forget to also type .cpp.)
+Create these files in the src folder of the ur5_inf3480 package.
 
 Paste the following code in the move_robot.cpp file.
 ```
@@ -95,6 +96,11 @@ code
 ```
 
 Paste the following code in the coordinates_pub.cpp file.
+```
+code
+```
+
+Paste the following code in the tfbinnen.cpp file.
 ```
 code
 ```
