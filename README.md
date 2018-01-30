@@ -2,10 +2,7 @@
 
 ROS Indigo Ubuntu 14.04. 
 
-##Install ROS
-
-http://wiki.ros.org/indigo/Installation/Ubuntu
-Install MoveIt! and ROS Industrial
+Install ROS http://wiki.ros.org/indigo/Installation/Ubuntu
 
 Install MoveIt!
 ```
