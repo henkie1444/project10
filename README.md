@@ -445,7 +445,11 @@ Edit the launch file as follows. The launch file is in the launch folder in the 
 ```
 <node name="inf3480_move_robot" pkg="ur5_inf3480" type="inf3480_move_robot" respawn="false" output="screen"></node>
 ```
-Everything is set up now. To run the code run the following line in the terminal.
+Everything is set up now. To run the code run the following line.
+Make sure that you are in your workspace.
+So
 ```
+cd
+cd ~/catkin_ws
 roslaunch ur5_inf3480 ur5_launch_inf3480.launch
 ```
