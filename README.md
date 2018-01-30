@@ -9,9 +9,9 @@ Install MoveIt! and ROS Industrial
 
 Install MoveIt!
 
-´´´
+```
 sudo apt-get install ros-indigo-moveit-full
-´´´
+```
 
 Install ROS Industrial
 
