@@ -105,7 +105,7 @@ Paste the following code in the tfbinnen.cpp file.
 code
 ```
 
-Modify the CMakeLists.txt to compile the new node. The following lines should be included or uncommented
+Modify the CMakeLists.txt to the following CMakeLists.txt file. The CMakeLists.txt file is in the ur5_inf3480 package.
 ```
 include_directories(
   ${catkin_INCLUDE_DIRS}
@@ -118,7 +118,7 @@ target_link_libraries(inf3480_move_robot
 )
 ```
 
-In the launch file, uncomment the last lines.
+Edit the launch file as follows. The launch file is in the launch folder in the package ur5_inf3480.
 ```
 <node name="inf3480_move_robot" pkg="ur5_inf3480" type="inf3480_move_robot" respawn="false" output="screen"></node>
 ```
