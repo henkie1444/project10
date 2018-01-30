@@ -87,7 +87,7 @@ mkdir src
 cd src
 ```
 
-Create a new file called move_robot.cpp and coordinates_pub.cpp. Don't forget to also type .cpp.)
+Create a new file called move_robot.cpp and coordinates_pub.cpp. (Don't forget to also type .cpp.)
 
 Paste the following code in the move_robot.cpp file.
 ```
