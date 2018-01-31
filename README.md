@@ -6,7 +6,7 @@ This document explains first the standard steps that need to be taken.
 The rest of the document shows the robot control part of our project.
 
 
-The vision part is located on the follwing GitHub page: ........................
+The vision part is located on the follwing GitHub page: https://github.com/project10ros/Vision-indigo
 
 
 
