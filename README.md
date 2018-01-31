@@ -455,6 +455,9 @@ roslaunch ur5_inf3480 ur5_launch_inf3480.launch
 ```
 
 
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 Master - Slave connection
 Set-up master slave connection between two laptops:
 
@@ -492,3 +495,32 @@ Now the master can check the connection by asking the information from the node 
 ```
 rostopic echo /node
 ```
+
+//////////////////////////////
+When adding poses or frames send to the master from the slave, The configuration of Rviz must be changed in order to keep the correct settings every time when starting up Rviz.
+1.The poses and frames are added in Rviz by using the add button and selecting the parts.
+2.When the necessary poses or frames are added and visible the configuration of Rviz can be saved under he current or a new name.
+3.When a new name is chosen the file that launches Rviz must be changed.
+4.For our project the launch file in “universal robot” → “ur5_moveit_config” → “launch” → “moveit_rviz.launch”.
+5. Code is shown below, where find ur5_moveit_config/launch is edited to include our new setting file named test.rviz.
+6. These setting files are in the same location as this launch file.
+
+```
+<launch> 
+
+  <arg name="debug" default="false" /> 
+  <arg unless="$(arg debug)" name="launch_prefix" value="" /> 
+  <arg     if="$(arg debug)" name="launch_prefix" value="gdb --ex run --args" /> 
+
+  <arg name="config" default="false" /> 
+  <arg unless="$(arg config)" name="command_args" value="" /> 
+  <arg     if="$(arg config)" name="command_args" value="-d $(find ur5_moveit_config)/launch/test.rviz" />	 
+  
+  <node name="$(anon rviz)" launch-prefix="$(arg launch_prefix)" pkg="rviz" type="rviz" respawn="false" 
+	args="$(arg command_args)" output="screen"> 
+    <rosparam command="load" file="$(find ur5_moveit_config)/config/kinematics.yaml"/> 
+  </node> 
+
+</launch>
+```
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
