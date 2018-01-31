@@ -453,7 +453,7 @@ cd
 cd ~/catkin_ws
 roslaunch ur5_inf3480 ur5_launch_inf3480.launch
 ```
-
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
 
@@ -504,7 +504,7 @@ Now the master can check the connection by asking the information from the node 
 rostopic echo /node
 ```
 
-//////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 When adding poses or frames send to the master from the slave, The configuration of Rviz must be changed in order to keep the correct settings every time when starting up Rviz.
 1.The poses and frames are added in Rviz by using the add button and selecting the parts.
 2.When the necessary poses or frames are added and visible the configuration of Rviz can be saved under he current or a new name.
