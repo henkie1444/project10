@@ -453,3 +453,42 @@ cd
 cd ~/catkin_ws
 roslaunch ur5_inf3480 ur5_launch_inf3480.launch
 ```
+
+
+Master - Slave connection
+Set-up master slave connection between two laptops:
+
+Master:
+1. Get IP address:
+```
+hostname -I
+```
+
+	```
+	Result will be like: 145.93.128.85
+	```
+	
+2. Export on IP:
+```
+ROS_IP=145.93.128.85	#Given IP is example.
+```
+
+Slave:
+1. Connect to master:
+```
+export ROS_MASTER_URI=”Master_IP” :11311
+```
+2. Get IP address:
+```
+hostname -I
+```
+
+3. Export on IP:
+```
+ROS_IP=145.93.128.85	#Given IP is example.
+```
+
+Now the master can check the connection by asking the information from the node that is being send:
+```
+rostopic echo /node
+```
