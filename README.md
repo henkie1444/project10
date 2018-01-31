@@ -19,16 +19,21 @@ Install ROS: http://wiki.ros.org/indigo/Installation/Ubuntu
 ROS tutorial: http://wiki.ros.org/ROS/Tutorials
 
 
-Install MoveIt!
+Install MoveIt!:
 ```
 sudo apt-get install ros-indigo-moveit-full
 ```
 MoveIt! tutorial: http://docs.ros.org/indigo/api/moveit_tutorials/html/
 
 
-Install ROS Industrial
+Install ROS Industrial:
 ```
 sudo apt-get install ros-indigo-industrial-core
+```
+
+Install Universal robot:
+```
+sudo apt-get install ros-indigo-universal-robot
 ```
 
 Create catkin workspace. In the terminal.
