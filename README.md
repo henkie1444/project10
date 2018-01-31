@@ -1,13 +1,30 @@
 # project10
 
+
+This document explains first the standard steps that need to be taken.
+
+The rest of the document shows the robot control part of our project.
+
+
+The vision part is located on the follwing GitHub page: ........................
+
+
+
+
+
 ROS Indigo Ubuntu 14.04. 
 
-Install ROS http://wiki.ros.org/indigo/Installation/Ubuntu
+Install ROS: http://wiki.ros.org/indigo/Installation/Ubuntu
+
+ROS tutorial: http://wiki.ros.org/ROS/Tutorials
+
 
 Install MoveIt!
 ```
 sudo apt-get install ros-indigo-moveit-full
 ```
+MoveIt! tutorial: http://docs.ros.org/indigo/api/moveit_tutorials/html/
+
 
 Install ROS Industrial
 ```
