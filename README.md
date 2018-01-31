@@ -464,9 +464,9 @@ Master:
 hostname -I
 ```
 
-	```
-	Result will be like: 145.93.128.85
-	```
+```
+Result will be like: 145.93.128.85
+```
 	
 2. Export on IP:
 ```
